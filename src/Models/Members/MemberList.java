@@ -29,6 +29,8 @@ public class MemberList implements List<Member>{
         if (members.containsKey(obj)) {
             members.remove(obj);
             return true;
+        }
+        return false;
     }
 
     @Override
@@ -42,7 +44,7 @@ public class MemberList implements List<Member>{
     }
 
     public MemberList() {
-        this.members=new HashMap<>();
+        this.members = new HashMap<>();
     }    
     
 }
