@@ -45,6 +45,11 @@ public class MemberList implements List<Member>{
 
     public MemberList() {
         this.members = new HashMap<>();
-    }    
+    }
     
+    public void showAll() {
+        for (Member member : members.values()) {
+            System.out.println(member);
+        }
+    }
 }
