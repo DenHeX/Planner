@@ -6,7 +6,7 @@ package Controler;
 
 import Models.Members.Member;
 import Models.Members.MemberList;
-import View.View;
+import Views.View;
 
 /**
  *
