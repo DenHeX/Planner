@@ -7,6 +7,7 @@ package Controler;
 /**
  *
  * @author denze
+ * @param <Type>
  */
 public interface Controler<Type> {
     public void insert(Type obj);

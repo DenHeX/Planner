@@ -13,7 +13,15 @@ import java.util.HashMap;
  */
 public class MemberList implements List<Member>{
     HashMap<String, Member> members = new HashMap<>();
+    private static MemberList memberlist;
 
+    public static MemberList getInstance() {
+        if (memberlist == null) {
+        memberlist = new MemberList();
+        }
+        return memberlist;
+    }
+    
     @Override
     public boolean insert(Member obj) {
         members.put(obj.getId(), obj);
@@ -43,7 +51,7 @@ public class MemberList implements List<Member>{
         return members.values().toArray(new Member[0]);
     }
 
-    public MemberList() {
+    private MemberList() {
         this.members = new HashMap<>();
     }
     

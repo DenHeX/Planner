@@ -11,6 +11,7 @@ import javax.swing.JInternalFrame;
 /**
  *
  * @author denze
+ * @param <Type>
  */
 public interface View<Type> {
     public static void maximize(JFrame frm) {

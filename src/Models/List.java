@@ -11,6 +11,7 @@ package Models;
  */
 public interface List<Type> {
     public boolean insert(Type obj);
+    public boolean update(Type obj);
     public boolean delete(Type obj);
     public Type search(Object id);
     public Type[] toArray();
