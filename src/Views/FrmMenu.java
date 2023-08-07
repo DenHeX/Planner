@@ -18,7 +18,7 @@ public class FrmMenu extends javax.swing.JFrame {
      */
     public FrmMenu() {
         initComponents();
-        //Maximize el formulario utilizando la interface View
+        View.maximize(this);
         //Cargar datos utilizando clase Data.
     }
 
@@ -56,7 +56,7 @@ public class FrmMenu extends javax.swing.JFrame {
 
         menuMembers.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_M, java.awt.event.InputEvent.CTRL_DOWN_MASK));
         menuMembers.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
-        menuMembers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Views/Icons/Miembros.png"))); // NOI18N
+        menuMembers.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Views/Miembros.png"))); // NOI18N
         menuMembers.setText("Miembros");
         menuMembers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
