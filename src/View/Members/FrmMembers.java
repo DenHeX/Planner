@@ -4,6 +4,7 @@ package View.Members;
 import Models.Members.Member;
 import Views.View;
 import Controller.Controller;
+import Models.Members.Role;
 import java.awt.event.KeyEvent;
 
 
@@ -295,11 +296,16 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
-        
+        clear();
     }//GEN-LAST:event_btnClearActionPerformed
 
     private void btnSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSaveActionPerformed
-        
+        String id = txtId.getText();
+        String name = txtName.getText();
+        String phone = txtPhone.getText();
+        String email = txtEmail.getText();
+        Role role = Role.valueOf(txtRole.getSelectedItem().toString());
+        Member newMember = new Member(id, name, phone, email, role);
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
