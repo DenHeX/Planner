@@ -140,7 +140,7 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
 
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Members/Nuevo.png"))); // NOI18N
+        btnClear.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Icons/Nuevo.png"))); // NOI18N
         btnClear.setToolTipText("Limpiar");
         btnClear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -148,7 +148,7 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
             }
         });
 
-        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Members/Guardar.png"))); // NOI18N
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Icons/Guardar.png"))); // NOI18N
         btnSave.setToolTipText("Guardar");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -156,7 +156,7 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
             }
         });
 
-        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Members/Eliminar.png"))); // NOI18N
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Icons/Eliminar.png"))); // NOI18N
         btnDelete.setToolTipText("Eliminar");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -164,7 +164,7 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
             }
         });
 
-        btnSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Members/Buscar.png"))); // NOI18N
+        btnSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/View/Icons/Buscar.png"))); // NOI18N
         btnSearch.setToolTipText("Buscar");
         btnSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
