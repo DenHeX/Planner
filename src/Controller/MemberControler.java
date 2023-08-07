@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package Controler;
+package Controller;
 
 import Models.Members.Member;
 import Models.Members.MemberList;
@@ -12,7 +12,7 @@ import Views.View;
  *
  * @author denze
  */
-public class MemberControler implements Controler<Member>{
+public class MemberControler implements Controller<Member>{
     private MemberList list;
     private View view;
 
