@@ -4,6 +4,7 @@
  */
 package Controller;
 
+import Models.Task.Task;
 import Views.View;
 
 /**
@@ -47,7 +48,7 @@ public class TaskControler implements Controller<Task> {
     }
 
     @Override
-    public void read(Task id) {
+    public void read(Object id) {
         Task task = taskList.search(id);
         if (task != null) {
             this.view.display(task);
