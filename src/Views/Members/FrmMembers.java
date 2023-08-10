@@ -7,6 +7,7 @@ import Controller.Controller;
 import Models.Members.Role;
 import Views.Table;
 import java.awt.event.KeyEvent;
+import javax.swing.JComboBox;
 import javax.swing.table.DefaultTableModel;
 
 
@@ -22,11 +23,13 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
     public FrmMembers() {
         initComponents();
         this.loadRoles();
-        //Llamar al metodo readAll de controller;
+        controller.readAll();
     }
     
     private void loadRoles(){
-        //Recorrer Enum de Role con foreach y agregar los valores a combobox
+//        for (Role role : Role.values()) {
+//            txtRole.addItem(role.toString());
+//        }
     }
 
     /**
@@ -312,11 +315,14 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
         String phone = txtPhone.getText();
         String email = txtEmail.getText();
         Role role = Role.valueOf(txtRole.getSelectedItem().toString());
-        Member newMember = new Member(id, name, phone, email, role);
+        Member member = new Member(id, name, phone, email, role);
     }//GEN-LAST:event_btnSaveActionPerformed
 
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
-        
+//        String idToDelete = txtId.getText();
+//        if (!idToDelete.isEmpty()) {
+//            Member member = new Member(idToDelete, null, null, null, null);
+//            clear();
     }//GEN-LAST:event_btnDeleteActionPerformed
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
