@@ -1,5 +1,5 @@
 
-package View.Members;
+package Views.Members;
 
 import Models.Members.Member;
 import Views.View;
@@ -7,6 +7,7 @@ import Controller.Controller;
 import Models.Members.Role;
 import Views.Table;
 import java.awt.event.KeyEvent;
+import javax.swing.table.DefaultTableModel;
 
 
 /**
@@ -384,13 +385,13 @@ public class FrmMembers extends javax.swing.JInternalFrame implements View<Membe
     
     @Override
     public void displayAll(Member[] regs) {
-//        DefaultTableModel tableModel=(DefaultTableModel) tblMembers.getModel();
-//        tableModel.setNumRows(0);
-//        for(Member member:regs){
-//            Object[] data=member.toArrayObject();
-//            tableModel.addRow(data);
-//        }
-//        this.tblMembers.setModel(tableModel);
+        DefaultTableModel tableModel=(DefaultTableModel) tblMembers.getModel();
+        tableModel.setNumRows(0);
+        for(Member member:regs){
+            Object[] data=member.toArrayObject();
+            tableModel.addRow(data);
+        }
+        this.tblMembers.setModel(tableModel);
     }
 
     @Override
